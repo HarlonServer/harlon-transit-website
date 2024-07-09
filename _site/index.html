@@ -1,109 +1,113 @@
+
 <!doctype html>
 <html class="js" lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8">
-  <title>Home | HarlonTransit</title>
+  <title>Home | Harlon Transit</title>
   <meta name="description" content="HarlonTransit is the government-owned public transport operator within the city of Harlon.">
-
-  <meta property="og:title" content="Home | HarlonTransit">
+  <meta property="og:title" content="Home | Harlon Transit">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ht.harlonserver.net">
   <meta name="og:description" content="HarlonTransit is the government-owned public transport operator within the city of Harlon.">
   <meta property="og:image" content="https://ht.harlonserver.net/img/transit-1.jpg">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/favicon.png">
   <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nsw-design-system@3/dist/css/main.css">
-  <link rel="stylesheet" href="./css/hcs.css">
+  <link rel="stylesheet" href="/css/hcs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<nav class="nsw-skip nsw-skip--light" aria-label="Skip to links">
-  <a href="#main-nav"><span>Skip to navigation</span></a>
-  <a href="#"><span>Skip to content</span></a>
-</nav>
-<div class="nsw-masthead nsw-masthead--light">
-  <div class="nsw-container"><strong>IP: play.harlonserver.net (Minecraft 1.17-1.19 recommended)</strong></div>
-</div>
+  <nav class="nsw-skip nsw-skip--light" aria-label="Skip to links">
+    <a href="#"><span>Skip to navigation</span></a>
+    <a href="#"><span>Skip to content</span></a>
+  </nav>
+  <div class="nsw-masthead nsw-masthead--light">
+    <div class="nsw-container"><strong>IP: play.harlonserver.net - Minecraft 1.20.4 with Optifine</strong></div>
+  </div>
 
-<header class="nsw-header">
-  <div class="nsw-header__container">
-    <div class="nsw-header__inner">
-      <div class="nsw-header__main">
-        <div class="nsw-header__waratah">
-          <a href="./index.html">
-            <img src="favicon.ico" width="64px" height="64px"/>
-            <span class="sr-only">HarlonTransit</span>
-          </a>
+  <header class="nsw-header">
+    <div class="nsw-header__container">
+      <div class="nsw-header__inner">
+        <div class="nsw-header__main">
+          <div class="nsw-header__waratah">
+            <a href="/">
+              <img src="/favicon.ico" alt="" width="64px" height="64px"/>
+              <span class="sr-only">Harlon Transit</span>
+            </a>
+          </div>
+          <div class="nsw-header__name">
+            <div class="nsw-header__title">Harlon Transit</div>
+          </div>
         </div>
-        <div class="nsw-header__name">
-          <div class="nsw-header__title">HarlonTransit</div>
+        <div class="nsw-header__menu">
+          <button type="button" class="js-open-nav" aria-expanded="false" aria-controls="main-nav">
+            <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">menu</span>
+            <span><span class="sr-only">Open</span> Menu</span>
+          </button>
         </div>
       </div>
-      <div class="nsw-header__menu">
-        <button type="button" class="js-open-nav" aria-expanded="false" aria-controls="main-nav">
-          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">menu</span>
-          <span><span class="sr-only">Open</span> Menu</span>
-        </button>
+  </header>
+  <nav class="nsw-main-nav" id="main-nav" aria-label="Main menu">
+    <div class="nsw-main-nav__header">
+      <div class="nsw-main-nav__title">Menu</div>
+      <button class="nsw-icon-button js-close-nav" type="button" aria-expanded="true">
+        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+        <span class="sr-only">Close Menu</span>
+      </button>
+    </div>
+    <ul class="nsw-main-nav__list">
+      <li>
+        <a href="/">
+          <span>Home</span>
+        </a>    </li>
+      <li>
+        <a href="/map">
+          <span>Transport Map</span>
+          </a>    </li>
+      <!--<li>
+        <a href="/about">
+            <span>About</span>
+            </a>    </li>-->
+      <!--<li>
+        <a href="https://parliament.harlonserver.net" target="_blank" rel="noopener noreferrer">
+          <span>Parliament</span>
+        </a>    </li>-->
+      <li>
+        <a href="https://harlonserver.net" target="_blank" rel="noopener noreferrer">
+          <span>Main Harlon Website</span>
+        </a>    </li>
+      <li>
+        <a href="https://wiki.harlonserver.net" target="_blank" rel="noopener noreferrer">
+          <span>Wiki</span>
+        </a>    </li>
+      <li>
+        <a href="https://dynmap.harlonserver.net" target="_blank" rel="noopener noreferrer">
+          <span>Dynmap</span>
+        </a>    </li>
+    </ul>
+  </nav>
+  <div class="nsw-global-alert nsw-global-alert--light js-global-alert" role="alert">
+    <div class="nsw-global-alert__wrapper">
+      <div class="nsw-global-alert__content">
+        <div class="nsw-global-alert__title">Trip Planner Out of Service</div>
+        <p>The HarlonTransit Trip Planner is out of service. A replacement trip planner will be developed and released to coincide with the opening of mainline services operated by Harlonian National. We apologise for any inconvenience caused.</p>
       </div>
+      <button class="nsw-icon-button js-close-alert" type="button" aria-expanded="true">
+        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+        <span class="sr-only">Close message</span>
+      </button>
     </div>
-</header>
-<nav class="nsw-main-nav" id="main-nav" aria-label="Main menu">
-  <div class="nsw-main-nav__header">
-    <div class="nsw-main-nav__title">Menu</div>
-    <button class="nsw-icon-button js-close-nav" type="button" aria-expanded="true">
-      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
-      <span class="sr-only">Close Menu</span>
-    </button>
   </div>
-  <ul class="nsw-main-nav__list">
-    <li>
-      <a href="./index.html">
-        <span>Home</span>
-      </a>    </li>
-    <li>
-      <a href="./map.html">
-        <span>Transport Map</span>
-      </a>    </li>
-    <li>
-      <a href="./tripplanner/">
-        <span>Trip Planner</span>
-      </a>    </li>
-    <li>
-      <a href="https://harlonserver.net" target="_blank" rel="noopener noreferrer">
-        <span>Main Harlon Website</span>
-      </a>    </li>
-    <li>
-      <a href="https://dynmap.harlonserver.net" target="_blank" rel="noopener noreferrer">
-        <span>Dynmap</span>
-      </a>    </li>
-  </ul>
-</nav>
-
-<div class="nsw-global-alert js-global-alert" role="alert">
-  <div class="nsw-global-alert__wrapper">
-    <div class="nsw-global-alert__content">
-      <div class="nsw-global-alert__title">Important Service Information</div>
-      <p><ul>
-        <li>Due to technical issues with the Go2 Card plugin, the plugin has been removed from the server, and hence all tickets, ticket machines, faregates and readers are currently not functional. Faregates have been opened at all stations and travel is free network-wide in the meantime.</li>
-        <li>The Trip Planner is currently unavailable due to technical issues. A replacement version will be developed and released to coincide with the opening of mainline services operated by Harlonian National.</li>
-        <li>All services are operating as per normal.</li>
-        </ul>
-      </p>
-    </div>
-    <button class="nsw-icon-button js-close-alert" type="button" aria-expanded="true">
-      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
-      <span class="sr-only">Close message</span>
-    </button>
-  </div>
-</div>
+  
 </head>
 
 <body>
-    
+  
   <div class="nsw-hero-banner nsw-hero-banner--dark">
     <div class="nsw-hero-banner__container">
       <div class="nsw-hero-banner__wrapper">
@@ -137,7 +141,7 @@
         </div>
       </div>
     </div>
-    <div class="nsw-col nsw-col-md-6 nsw-col-lg-4">
+    <!--<div class="nsw-col nsw-col-md-6 nsw-col-lg-4">
       <div class="nsw-card">
         <div class="nsw-card__image">
           <img src="./img/slideshow-2.png" alt="HarlonTransit Metro train">
@@ -150,7 +154,7 @@
           <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
         </div>
       </div>
-    </div>
+    </div>-->
     <div class="nsw-col nsw-col-md-6 nsw-col-lg-4">
       <div class="nsw-card">
         <div class="nsw-card__image">
@@ -192,32 +196,33 @@
   </div>
   
 
-  
-    <br>
-    <script src="https://cdn.jsdelivr.net/npm/nsw-design-system@3/dist/js/main.min.js"></script>
-    <script>window.NSW.initSite()</script>
-    </div>
+  <br>
+<script src="https://cdn.jsdelivr.net/npm/nsw-design-system@3/dist/js/main.min.js"></script>
+<script>window.NSW.initSite()</script>
 
-    </body>
-    
-    <footer class="nsw-footer nsw-footer--dark">
-      <div class="nsw-footer__lower">
-        <div class="nsw-container">
-          <p>HarlonTransit - keeping you moving.</p>
-          <hr>
-          <ul>
-            <li><a href="https://discord.gg/qMmk8MuEBz" target="_blank" rel="noopener noreferrer">Discord</a></li>
-            <li><a href="https://youtube.com/channel/UCUsBniuYo4fKNWy-PcAoDNg" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-            <li><a href="https://twitter.com/HarlonServer" target="_blank" rel="noopener noreferrer">X/Twitter</a></li>
-            <li><a href="https://www.tiktok.com/@harlonserver" target="_blank" rel="noopener noreferrer">Tiktok</a></li>
-            <li><a href="https://www.github.com/HarlonServer" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          </ul>
-          <div class="nsw-footer__info">
-            <div class="nsw-footer__copyright">Copyright © Harlon City Server. NOT AN OFFICIAL MINECRAFT SERVER. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT CORPORATION.</div>
-            <div class="nsw-footer__built">Powered by the <a href="https://digitalnsw.github.io/nsw-design-system/" target="_blank" rel="noopener noreferrer">NSW Design System,</a><a href="https://html5boilerplate.com/" target="_blank" rel="noopener noreferrer">HTML5 Boilerplate</a>and <a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">Eleventy.</a></div>
-          </div>
-        </div>
+<button type="button" class="nsw-button nsw-button--dark nsw-button--flex nsw-back-to-top js-back-to-top"> </button>
+
+</body>
+</div>
+<footer class="nsw-footer nsw-footer--dark">
+  <div class="nsw-footer__lower">
+    <div class="nsw-container">
+      <p>HarlonTransit: <strong>Keeping You Moving</strong></p>
+      <hr>
+      <ul>
+        <li><a href="https://discord.gg/qMmk8MuEBz" target="_blank" rel="noopener noreferrer">Discord</a></li>
+        <li><a href="https://youtube.com/channel/UCUsBniuYo4fKNWy-PcAoDNg" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+        <li><a href="https://twitter.com/HarlonServer" target="_blank" rel="noopener noreferrer">X/Twitter</a></li>
+        <li><a href="https://www.tiktok.com/@harlonserver" target="_blank" rel="noopener noreferrer">Tiktok</a></li>
+        <li><a href="https://www.github.com/HarlonServer" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <!--<li><a href="https://store.harlonserver.net" target="_blank" rel="noopener noreferrer">Server Store</a></li>-->
+      </ul>
+      <div class="nsw-footer__info">
+        <div class="nsw-footer__copyright">Copyright © Harlon City Server. NOT AN OFFICIAL MINECRAFT SERVER. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT CORPORATION.</div>
+        <div class="nsw-footer__built">Powered by the <a href="https://digitalnsw.github.io/nsw-design-system/" target="_blank" rel="noopener noreferrer">NSW Design System,</a><a href="https://html5boilerplate.com/" target="_blank" rel="noopener noreferrer">HTML5 Boilerplate</a>and <a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">Eleventy.</a></div>
       </div>
-    </footer>
-    
+    </div>
+  </div>
+</footer>
+
 </html>
